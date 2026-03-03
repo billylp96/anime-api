@@ -13,11 +13,13 @@ export const homeRoutes: Routes = [
         children: [
           {
             path: 'pokemon',
-            loadChildren: () => import("../pokemons/pokemon.routes")
+            loadChildren: () => import("../pokemons/pokemon.routes"),
+            title: 'Pokémon API'
           },
           {
             path: 'dbz',
-            loadChildren: () => import("../dragonBall/dragon-ball.routes")
+            loadChildren: () => import("../dragonBall/dragon-ball.routes"),
+            title: 'DBZ API'
           },
           {
             path: '**',
