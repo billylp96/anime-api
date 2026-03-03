@@ -1,16 +1,20 @@
-<div class="navbar bg-base-100 shadow-sm px-2 sm:px-4 lg:px-8">
-
+<div class=" flex px-5 md:px-15  mt-3">
   <!-- LEFT -->
   <div class="navbar-start">
-    <a class="btn btn-ghost text-xl" routerLink="/home/pokemon">
-     🌐 Anime API
+    <a class="text-sm md:text-2xl hover:text-red-400 drop-shadow-md drop-shadow-amber-300" routerLink="/home/pokemon">
+      🌐 Anime API
     </a>
   </div>
 
   <!-- CENTER (Desktop) -->
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-      <li><a routerLink="/home/pokemon">Api Pokémon</a></li>
+  <div class="navbar-center hidden md:flex">
+    <ul class="flex gap-10 text-sm items-center">
+      <li class="">
+        <a routerLink="/home/pokemon" routerLinkActive="font-bold border-b-2 border-blue-500"
+          class="flex gap-2 items-center text-yellow-400 transition-all duration-200"> Pokémon API
+          <img src="pokeball-icon.png" alt="" class="size-5  " />
+        </a>
+      </li>
       <!-- <li>
         <details>
           <summary>Parent</summary>
@@ -20,7 +24,12 @@
           </ul>
         </details>
       </li> -->
-      <li><a routerLink="/home/dbz">Api DragonBall</a></li>
+      <li class="">
+        <a routerLink="/home/dbz"   routerLinkActive="font-bold border-b-2 border-blue-500"
+          class="text-orange-400 flex gap-2  items-center transition-all duration-200"> DragonBall API
+          <img src="dbz-ball-icon.png" alt="" class="size-6 " />
+        </a>
+      </li>
     </ul>
   </div>
 
@@ -28,21 +37,26 @@
   <div class="navbar-end">
 
     <!-- Mobile menu -->
-    <div class="dropdown dropdown-end lg:hidden">
+    <div class="dropdown dropdown-end md:hidden">
       <label tabindex="0" class="btn btn-ghost">
         ☰
       </label>
 
-      <ul
-        tabindex="0"
-        class="menu dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-      >
-        <li><a routerLink="/home/pokemon">Api Pokémon</a></li>
-        <li><a routerLink="/home/dbz">Api DragonBall</a></li>
+      <ul tabindex="0" class="menu dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+        <li>
+          <a routerLink="/home/pokemon" routerLinkActive="font-bold border-b-2 border-blue-500"
+            class="text-yellow-400 transition-all duration-200">Api Pokémon
+            <img src="pokeball-icon.png" alt="" class="size-5" />
+          </a>
+        </li>
+        <li><a routerLink="/home/dbz" routerLinkActive="font-bold border-b-2 border-blue-500"
+          class="text-orange-400 transition-all duration-200"
+          >Api DragonBall
+            <img src="dbz-ball-icon.png" alt="" class="size-6 " />
+          </a>
+        </li>
       </ul>
     </div>
 
-    <!-- Desktop button -->
-    <!-- <a class="btn hidden lg:inline-flex">Button</a> -->
   </div>
 </div>

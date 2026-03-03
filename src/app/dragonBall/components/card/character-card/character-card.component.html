@@ -1,4 +1,4 @@
-<div class="card card-side bg-base-100 shadow-sm my-5
+<div class="card card-side bg-slate-800 shadow-lg shadow-slate-700 my-5
  ">
   <figure class="w-80 h-180 hidden xl:block">
     <img [src]="image()" class="w-full h-full" />
@@ -17,7 +17,7 @@
 
     <div class=" overflow-auto mt-5">
       @for (propertie of characterProperties() ; track propertie) {
-      <p><span class="font-extrabold"> {{propertie.key | titlecase}}</span> : {{propertie.value}}</p>
+      <p><span class=" text-amber-200 font-bold"> {{propertie.key | titlecase}}</span> : {{propertie.value}}</p>
       <br>
       }
     </div>
