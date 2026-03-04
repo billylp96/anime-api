@@ -1,59 +1,79 @@
-# PokemonApi
+# My Anime Api
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
+Aplicación web desarrollada con Angular que consume múltiples APIs públicas 
+(Pokémon y Dragon Ball) mostrando datos con paginación, búsqueda y reproducción de audio.
 
-## Development server
+Aplicación web desarrollada con Angular 20 que consume y gestiona múltiples APIs públicas mediante arquitectura reactiva, paginación dinámica, búsqueda, reproducción de audio y manejo de estado con Angular Signals.
 
-To start a local development server, run:
+## 🌐 APIs utilizadas
+
+- Pokémon API
+- Dragon Ball API
+
+---
+## 🚀 Tecnologías
+
+- Angular 20
+- Angular Signals
+- TypeScript
+- RxJS
+- Tailwind Css
+- DaisyUI
+- SwiperJs
+- Consumo de APIs REST 
+- Paginación dinámica
+- Filtros por nombre
+
+---
+## 🧠 Conceptos aplicados
+
+- Consumo de APIs externas
+- Manejo de estado con Angular Signals 
+- Programación reactiva con RxJS
+- Arquitectura basada en servicios
+- Componentes standalone
+- Paginación y filtrado dinámico
+
+---
+## ✨ Funcionalidades
+
+- Listado paginado
+- Búsqueda por nombre
+- Visualización de tipos
+- Reproducción de sonidos (Pokémon Cry)
+- Navegación entre APIs
+
+---
+### ⚠️ Prerrequisitos 
+- NodeJS v22.16.0
+- Angular 20 o superior
+
+---
+## 🖥️ Ejecutar proyecto
+Ejecutar en la terminal lo siguiente en la ruta donde hayas descargado el proyecto:
 
 ```bash
+npm install 
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Abrir en:
+http://localhost:4200
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+---
+## 📦 Generar build para producción
 ```bash
-ng generate component component-name
+ng build --configuration production
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
+## 🌍 Deploy
+Este proyecto está desplegado en:
+https://myanime-api.netlify.app
 
-```bash
-ng generate --help
-```
 
-## Building
 
-To build the project run:
 
-```bash
-ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
