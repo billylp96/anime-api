@@ -1,8 +1,9 @@
-<div class=" flex px-5 md:px-15  mt-3">
+<nav class=" flex px-5 md:px-15  py-5 bg-red-600 dark:bg-neutral">
   <!-- LEFT -->
   <div class="navbar-start">
-    <a class="text-sm md:text-2xl hover:text-red-400 drop-shadow-md drop-shadow-amber-300" routerLink="/home/pokemon">
-      🌐 Anime API
+    <a class="text-md md:text-2xl dark:hover:text-red-400 drop-shadow-md drop-shadow-amber-300"
+      routerLink="/home/pokemon">
+      🌐 My Anime API
     </a>
   </div>
 
@@ -10,23 +11,16 @@
   <div class="navbar-center hidden md:flex">
     <ul class="flex gap-10 text-sm items-center">
       <li class="">
-        <a routerLink="/home/pokemon" routerLinkActive="font-bold border-b-2 border-blue-500"
-          class="flex gap-2 items-center text-yellow-400 transition-all duration-200"> Pokémon API
+        <a routerLink="/home/pokemon" routerLinkActive="border-b-2 border-blue-500"
+          class="flex gap-2 items-center font-semibold text-lg text-white dark:text-yellow-400 transition-all duration-200">
+          Pokémon API
           <img src="pokeball-icon.png" alt="" class="size-5  " />
         </a>
       </li>
-      <!-- <li>
-        <details>
-          <summary>Parent</summary>
-          <ul class="p-2 bg-base-100 w-40 shadow">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
-      </li> -->
       <li class="">
-        <a routerLink="/home/dbz"   routerLinkActive="font-bold border-b-2 border-blue-500"
-          class="text-orange-400 flex gap-2  items-center transition-all duration-200"> DragonBall API
+        <a routerLink="/home/dbz" routerLinkActive=" border-b-2 border-blue-500"
+          class=" font-semibold text-lg text-white dark:text-orange-400 flex gap-2  items-center transition-all duration-200">
+          DragonBall API
           <img src="dbz-ball-icon.png" alt="" class="size-6 " />
         </a>
       </li>
@@ -36,13 +30,34 @@
   <!-- RIGHT -->
   <div class="navbar-end">
 
+    <!-- darkmode icon -->
+    <div class="flex gap-2 items-center">
+      <span class="group inline-flex shrink-0 justify-center items-center size-9 ">
+        <svg class="shrink-0 size-4 text-white" xmlns="http://www.w3.org/2000/svg " width="24"
+          height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z " />
+        </svg>
+      </span>
+
+      <!-- switcher darkmode -->
+      <label for="darkSwtich" class="relative inline-block w-11 h-6 cursor-pointer ">
+        <input data-hs-theme-switch type="checkbox" id="darkSwtich" class="peer sr-only " (click)="darkModeOnOff()">
+        <span
+          class="bg-blue-900 absolute inset-0 bg-surface-1 rounded-full transition-colors duration-200 ease-in-out peer-checked:bg-primary-checked peer-disabled:opacity-50 peer-disabled:pointer-events-none "></span>
+        <span
+          class="bg-white absolute top-1/2 start-0.5 -translate-y-1/2 size-5 bg-switch rounded-full shadow-sm transition-transform! duration-200 ease-in-out peer-checked:translate-x-full "></span>
+      </label>
+    </div>
+
     <!-- Mobile menu -->
     <div class="dropdown dropdown-end md:hidden">
       <label tabindex="0" class="btn btn-ghost">
         ☰
       </label>
 
-      <ul tabindex="0" class="menu dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+      <ul tabindex="0" class="menu dropdown-content mt-3 p-2 shadow  rounded-box w-52 
+         bg-slate-600 dark:bg-base-100">
         <li>
           <a routerLink="/home/pokemon" routerLinkActive="font-bold border-b-2 border-blue-500"
             class="text-yellow-400 transition-all duration-200">Api Pokémon
@@ -50,8 +65,7 @@
           </a>
         </li>
         <li><a routerLink="/home/dbz" routerLinkActive="font-bold border-b-2 border-blue-500"
-          class="text-orange-400 transition-all duration-200"
-          >Api DragonBall
+            class="text-orange-400 transition-all duration-200">Api DragonBall
             <img src="dbz-ball-icon.png" alt="" class="size-6 " />
           </a>
         </li>
@@ -59,4 +73,4 @@
     </div>
 
   </div>
-</div>
+</nav>

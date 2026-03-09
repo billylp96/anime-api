@@ -9,5 +9,7 @@ import { RouterModule } from '@angular/router';
 })
 export class NavbarComponent  {
 
- 
+ darkModeOnOff(){
+  document.body.classList.toggle('dark');
+ }
 }

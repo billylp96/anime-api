@@ -1,6 +1,6 @@
 <!-- Open the modal using ID.showModal() method -->
 <dialog #modal class="modal modal-middle sm:modal-middle" (close)="closeModal()">
-  <div class="modal-box">
+  <div class="modal-box bg-gray-200 dark:bg-slate-800">
     <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" (click)="closeModal()">✕</button>
 
     <div class="mb-15">
@@ -14,7 +14,7 @@
     @for (planetCharacters of planetCharacters(); track planetCharacters) {
 
     <div class="flex row items-center mb-5">
-      <p class="flex justify-center text-2xl text-green-400">{{planetCharacters.name}}</p>
+      <p class="flex justify-center text-2xl text-blue-600 dark:text-green-400">{{planetCharacters.name}}</p>
       <img [src]="planetCharacters.image" class="h-50 w-30">
     </div>
 

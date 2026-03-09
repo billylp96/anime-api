@@ -1,9 +1,9 @@
-<div class="join flex justify-center mb-10">
-  <button class="join-item btn" [routerLink]="[]" [queryParams]="{page:1}">First</button>
-  <button class="join-item btn" [routerLink]="[]" [queryParams]="{page:currentPage()-1}"
+<div class="join flex justify-center mb-10 ">
+  <button class="join-item btn bg-gray-400 dark:bg-slate-800" [routerLink]="[]" [queryParams]="{page:1}">First</button>
+  <button class="join-item btn bg-gray-500 dark:bg-slate-800/50 " [routerLink]="[]" [queryParams]="{page:currentPage()-1}"
      [disabled]="currentPage()==1">«</button>
-  <button class="join-item btn">Page {{currentPage()}} of {{totalPages()}} </button>
-  <button class="join-item btn" [routerLink]="[]" [queryParams]="{page:currentPage()+1}"
+  <button class="join-item btn bg-gray-400 dark:bg-slate-800">Page {{currentPage()}} of {{totalPages()}} </button>
+  <button class="join-item btn bg-gray-500 dark:bg-slate-800/50" [routerLink]="[]" [queryParams]="{page:currentPage()+1}"
    [disabled]="currentPage()==totalPages()">»</button>
-  <button class="join-item btn" [routerLink]="[]" [queryParams]="{page:(totalPages())}">Last </button>
+  <button class="join-item btn bg-gray-400 dark:bg-slate-800" [routerLink]="[]" [queryParams]="{page:(totalPages())}">Last </button>
 </div>

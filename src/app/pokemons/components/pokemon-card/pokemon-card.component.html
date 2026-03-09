@@ -1,7 +1,8 @@
-<div class="card bg-slate-800 w-40 shadow-lg shadow-slate-700 mb-15 cursor-pointer 
-  sm:w-50 ">
+<div class=" flex flex-col card p-3 bg-gray-200 text-black dark:text-white dark:bg-linear-to-b from-slate-900 to-slate-700 w-40 
+  shadow-xl shadow-slate-500 dark:shadow-slate-800  mb-15 cursor-pointer 
+  sm:w-50 h-80">
 
-  <a [routerLink]="['../view',pokemonResource.value()?.name]">
+  <section [routerLink]="['../view',pokemonResource.value()?.name]" class="flex-1">
     <figure>
       <img [src]="pokemonResource.value()?.sprites?.front_default" [alt]="pokemonResource.value()?.name"
         class="size-30" />
@@ -17,7 +18,7 @@
       </div>
       }
     </div>
-  </a>
+  </section>
 
   @if(pokemonResource.value()?.cries?.latest){
   <button (click)="playCry(pokemonResource.value()?.cries?.latest)" class="flex items-center gap-2 px-4 py-2 rounded-xl

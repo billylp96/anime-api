@@ -3,11 +3,12 @@
 
   <app-menuButtons />
 
-  <div class="flex justify-center ">
+  <div class="flex justify-center text-black">
     <select class="select select-secondary 
-    w-40
-    sm:w-50" (change)="filtrar($event)">
-      <option disabled selected>Search by race</option>
+    w-40 sm:w-50 bg-gray-200 dark:bg-slate-800 dark:text-white" 
+    
+    (change)="filtrar($event)">
+      <option disabled selected >Search by race</option>
       @for (race of races() ; track race) {
       <option [value]="race">{{race}}</option>
       }
